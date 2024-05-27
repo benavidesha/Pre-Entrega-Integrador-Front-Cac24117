@@ -1,5 +1,3 @@
-# Configuración para manejar finales de línea
-* text=auto
-
-# Configuración específica para archivos
-*.css text eol=crlf
+*.css text eol=lf
+*.html text eol=lf
+*.js text eol=lf
