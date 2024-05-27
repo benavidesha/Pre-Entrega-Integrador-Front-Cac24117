@@ -1,0 +1,5 @@
+# Configuración para manejar finales de línea
+* text=auto
+
+# Configuración específica para archivos
+*.css text eol=crlf
