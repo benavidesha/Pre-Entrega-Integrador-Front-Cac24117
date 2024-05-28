@@ -15,17 +15,17 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
-
+  
 /* Track */
 ::-webkit-scrollbar-track {
     background: rgb(23, 23, 23);
 }
-
+   
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #9f3647;
 }
-
+  
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background:#9f3647;
@@ -33,8 +33,8 @@
 body{
     background-color: #181419;
     color:white; 
-    /* scrollbar-color: #9f3647  #181419; /*nuevo
-    scrollbar-width: thin;*/
+     /* scrollbar-color: #9f3647  #181419; /*nuevo
+     scrollbar-width: thin;*/
 }
 
 /*ESTILOS HEADER PARA ESCRITORIO*/
@@ -88,18 +88,18 @@ body{
                     
                     border-radius: 5px;
                      /* Agregar efecto de botón presionado */
-                    transition: transform 0.3s, box-shadow 0.3s;
-                    &:hover {
-                        background-color: #9f3647;
+                     transition: transform 0.3s, box-shadow 0.3s;
+                     &:hover {
+                         background-color: #9f3647;
                         /* transform: scale(0.95);
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
-                    }
+                         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+                     }
                 }
             }
-
+           
         }
     }
-
+   
 }
 /*ESTILOS PARA HEADER MOBILE Y TABLET*/
 
@@ -116,7 +116,7 @@ body{
                 font-weight:700;
             }
             .listaNav{
-
+               
                 padding:initial;
                 .listaItem{
                     .linkNav{
@@ -124,7 +124,9 @@ body{
                         margin-right: initial;
                         font-size: 1rem;
                         padding: 0.2rem;
+                        
                     }
+                  
                 }
             }
         }
@@ -162,17 +164,17 @@ body{
             font-weight: 700;
             text-decoration: none;
              /* Agregar efecto de botón presionado */
-            transition: transform 0.3s, box-shadow 0.3s;
-            &:hover {
-                background-color: #9f3647;
-                transform: scale(0.95);
-                box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-            }
+             transition: transform 0.3s, box-shadow 0.3s;
+             &:hover {
+                 background-color: #9f3647;
+                 transform: scale(0.95);
+                 box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+             }
         }
     }
     .buscadorPrincipal{
         background-color: #181419;
-        color:white;
+        color:rgb(255, 255, 255);
         height: 50vh;
         display: flex;
         flex-direction: column;
@@ -192,7 +194,7 @@ body{
             .inputBuscador{
                 border: 2px solid white;
                 border-radius: 25px;
-                color: black;
+                color: #000000;
                 font-size: 1.2rem;
                 height: 50px;
                 margin: 20px 0px;
@@ -213,14 +215,15 @@ body{
                 border: 2px solid white;
                 text-align: center;
                  /* Agregar efecto de botón presionado */
-                transition: transform 0.3s, box-shadow 0.3s;
-                &:hover {
-                    background-color: #9f3647;
-                    transform: scale(0.95);
-                    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-                }
+                 transition: transform 0.3s, box-shadow 0.3s;
+                 &:hover {
+                     background-color: #9f3647;
+                     transform: scale(0.95);
+                     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+                 }
             }
         }
+       
     }
     .peliculasTendencia{
         width:80%;
@@ -247,14 +250,15 @@ body{
                     overflow: hidden;
                     border-radius: 10px;
                     transition: all 0.5s ease;
-
+                   
                     .imgTendencia{
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                         border-radius: 10px;
+                       
                     }
-            
+                  
                     .tituloPelicula{
                         z-index: 2;
                         position: absolute;
@@ -265,7 +269,7 @@ body{
                         width: 100%;
                         transform: translateY(-50%) translateX(-50%);
                         h4 {
-                            font-size: 2rem;
+                            font-size: 1.6rem;
                             font-weight: bold;
                             opacity: 0;
                             margin-bottom: 0.5rem;
@@ -275,27 +279,27 @@ body{
                         }
                     }
                     &:hover{
-                    box-shadow: 0 0 30px #9f3648cd;
-                    transform: scale(1.1);
-
+                       box-shadow: 0 0 30px #9f3648cd;
+                       transform: scale(0.9);
+                      
                     }
-                    &:hover h4 {
-                        opacity: 1;
-
-                    }
-                    &:hover::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
+                    &:hover .tituloPelicula{
                         width: 100%;
                         height: 100%;
-                        border-radius: 10px;
-                        background-color: #9f3648; /* Color rojo transparente */
-                        z-index: 1; /* Para asegurarse de que esté sobre la imagen */
+                        backdrop-filter: blur(20px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
+                    &:hover h4 {
+                        width: 100%;
+                        padding: 0.5rem;
+                        opacity: 1;
+                    }
+                 
                 }
             }
+          
         }
         .boton{
             border: 1px solid white;
@@ -311,12 +315,13 @@ body{
             text-decoration: none;
             margin-bottom:60px;
              /* Agregar efecto de botón presionado */
-            transition: transform 0.3s, box-shadow 0.3s;
-            &:hover {
-            background-color: #9f3647;
-            transform: scale(0.95);
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-            }
+             transition: transform 0.3s, box-shadow 0.3s;
+             &:hover {
+                 background-color: #9f3647;
+                 transform: scale(0.95);
+                 box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+             }
+
         }
     }
     .peliculasAclamadas{
@@ -348,16 +353,20 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-
+               
                 .imgAclamada{
                     border-radius: 5%;
                     width: 95%;
                     height: 95%;
                     object-fit: cover;
                 }
+                
             }
+           
+        
         }
     }
+   
 }
 
 @media (max-width: 768px) {
@@ -402,25 +411,23 @@ body{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-
+              
                 a{
                     width: 100%;
                     .pelicula{
                         width: 100%;
                         height: 500px;
-                
+                       
                         .tituloPelicula{
                             h4 {
                                 font-size: 1rem;
                             }
                         }
+                       
                     }
                 }
-                &:hover{
-                    box-shadow:initial;
-                    transform: scale(0.9);
-
-                }
+              
+               
             }
             .boton{
                 padding: 0.8rem 0.8rem;
@@ -491,7 +498,7 @@ body{
         padding-bottom: 20px;
         .listaNav{
             flex-direction: column;
-
+           
             row-gap: 15px;
             .listaItem{
                 
@@ -505,6 +512,9 @@ body{
         }
     }
 }
+
+
+
 
 /*ESTILOS ESCRITORIO PARA PAGINA Registrarse */
 .bodyRegistrarse{
@@ -521,14 +531,14 @@ body{
             color: #ffffff;
             font-weight: 700;
             font-size: 1.2rem;
-            /*animacion hover*/
+             /*animacion hover*/
             &:hover{
                 animation: tilt-n-move-shaking 0.25s infinite;
             }
         }
     }
     .main{
-        /*seccion de registrarse.html*/
+         /*seccion de registrarse.html*/
         .seccionRegistrarse{
             background-color:rgb(42, 42, 42);
             width: 30%;
@@ -552,7 +562,7 @@ body{
                 padding:40px;
                 input:not(.check,.boton),select{
                     width: 100%;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                     height: 40px;
                     padding: 0px 20px;
                     font-size: 1.2rem;
@@ -560,8 +570,18 @@ body{
                     border: 2px solid #9f3647;
                     background-color: #333333;
                     outline: none;
-                    color:white;
+                    color:rgb(255, 255, 255);
                 }
+                .error input:not(.check,.boton),.error select{
+                    border: 1px solid #ff0000;
+                }
+                .error-text{
+                    color: #ff0000;
+                    font-size: 0.8rem;
+                    margin-top:0px;
+                    margin-bottom: 10px;
+                }
+              
                 .terminos{
                     font-size: 0.8rem;
                     display: flex;
@@ -581,6 +601,7 @@ body{
                     border-radius: 5px;
                     font-size: 1rem;
                     font-weight: 500;
+                   
                 }
                 .ayuda{
                     margin-top:40px;
@@ -588,11 +609,16 @@ body{
                     text-decoration: none;
                     color: #787878;
                     font-weight:400;
+                   
                 }
             }
+           
         }
+   
     }
 }
+
+
 
 /*media querys para mobile PAGINA registrarse*/
 @media (max-width: 1200px) {
@@ -610,10 +636,10 @@ body{
                 .tituloRegistrarse{
                     font-size: 2rem;
                 }
-            form{
+               form{
                 width: 100%;
                 text-align: center;
-            
+               
                 input:not(.check,.boton),select{
                     width: 80%;
                     height: 35px;
@@ -635,10 +661,12 @@ body{
                     text-align: left;
                     font-size: 0.8rem;
                 }
-            }
+               }
+               
             }
         }
     }
+
 }
 
 /*ESTILOS ESCRITORIO Detalle Mario*/
@@ -658,7 +686,7 @@ body{
             align-items: center;
             column-gap: 60px;
             img{
-            border-radius: 20px;
+              border-radius: 20px;
             }
             .textoDetalle{
                 h1{
@@ -675,6 +703,9 @@ body{
                 }
             }
         }
+        
+        
+       
     }
     .trailer{
         padding-top:150px;
@@ -700,6 +731,7 @@ body{
                             margin-right: 50px;
                         }
                     }
+                  
                 }
             }
             .info{
@@ -757,6 +789,7 @@ body{
                 iframe{
                     width: 100%;
                     height: 300px;
+                
                 }
             }
             .contenedorInfo{
@@ -767,7 +800,7 @@ body{
                         width: 100%;
                         display: flex;
                         justify-content: space-between;
-
+                       
                         li{
                             a{
                                 font-size: 2rem;
