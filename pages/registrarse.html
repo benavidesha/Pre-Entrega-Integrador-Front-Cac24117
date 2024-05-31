@@ -31,27 +31,32 @@
     <!-- Inicio Seccion Form -->
 
         <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
-            <form action="#" method="post">
+            <form id="form" action="#" method="post">
                 <h2 class="tituloRegistrarse">Registro</h2>
 
                 <div>
-                    <input type="text" placeholder="Nombre" required id="nombre" name="nombre">
+                    <input type="text" placeholder="Nombre" id="nombre" name="nombre">
+                    <div class="error-text"></div>
                 </div>
 
                 <div>
-                    <input type="text" placeholder="Apellido" required id="apellido" name="apellido">
+                    <input type="text" placeholder="Apellido" id="apellido" name="apellido">
+                    <div class="error-text"></div>
                 </div>
 
                 <div>
-                    <input type="email" placeholder="Email" required id="mail" name="mail">
+                    <input type="email" placeholder="Email" id="mail" name="mail">
+                    <div class="error-text"></div>
                 </div>
 
                 <div>
-                    <input type="password" placeholder="Contraseña" required id="password" name="password">
+                    <input type="password" placeholder="Contraseña" id="password" name="password">
+                    <div class="error-text"></div>
                 </div>
 
                 <div>
-                    <input type="date" placeholder="Fnac.(dd/mm/aaaa)" required id="fechaNacimiento" name="fechaNacimiento">
+                    <input type="date" placeholder="Fnac.(dd/mm/aaaa)" id="fechaNacimiento" name="fechaNacimiento">
+                    <div class="error-text"></div>
                 </div>
 
                 <div>
@@ -68,15 +73,17 @@
                         <option value="VE">Venezuela</option>
                         <option value="UY">Uruguay</option>
                     </select>
+                    <div class="error-text"></div>
                 </div>
 
                 <div class="terminos">
                     <input type="checkbox" class="check" id="terminos">
                     <label class="textoCheck" for="terminos">Acepto Términos y Condiciones</label>
+                    <div class="error-text"></div>
                 </div>
 
                 <div>
-                    <input type="submit" value="Registrarse" class="boton">
+                    <input class="boton" type="submit" value="Registrarse">
                 </div>
 
                 <div>
@@ -92,6 +99,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>    
+    </script>
+    <script src="../js/validar_registro.js"></script>
 </body>
 </html>

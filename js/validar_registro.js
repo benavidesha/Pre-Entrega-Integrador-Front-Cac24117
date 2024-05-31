@@ -1,11 +1,8 @@
-
 /*Esta línea añade un evento al documento que se activa cuando el contenido HTML ha sido completamente cargado y parseado. En otras palabras, se ejecuta cuando el DOM está listo para ser manipulado.*/
-
-/*
-document.addEventListener('form', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
     /*Aquí se agrega un evento de escucha al formulario que se activa cuando se intenta enviar el formulario. */
-    form.addEventListener('submit', (event) => {
+        form.addEventListener('submit', (event) => {
         if (!validateForm()) {
             console.log('El formulario no es válido. Por favor, corrige los errores.');
             event.preventDefault(); // Esta línea evita que el formulario se envíe si hay errores de validación
@@ -15,9 +12,7 @@ document.addEventListener('form', () => {
         }
     });
 
-    /*
-
-    const validateForm = () => {
+        const validateForm = () => {
         let isValid = true;
 
         // Validar campo de nombre
@@ -50,7 +45,7 @@ document.addEventListener('form', () => {
         return isValid;
     };
 
-    const validateField = (fieldId, errorMessage) => {
+        const validateField = (fieldId, errorMessage) => {
         const field = document.getElementById(fieldId);
         const value = field.value.trim();
         if (value === '') {
@@ -62,7 +57,7 @@ document.addEventListener('form', () => {
         }
     };
 
-    const validateEmailField = (fieldId, errorMessage) => {
+        const validateEmailField = (fieldId, errorMessage) => {
         const field = document.getElementById(fieldId);
         const email = field.value.trim();
         if (email === '') {
@@ -77,7 +72,7 @@ document.addEventListener('form', () => {
         }
     };
 
-    const setErrorFor = (input, message) => {
+        const setErrorFor = (input, message) => {
         const formControl = input.closest('div');
         const errorText = formControl.querySelector('.error-text');
         formControl.classList.add('error');
@@ -85,15 +80,14 @@ document.addEventListener('form', () => {
         input.focus();
     };
 
-    const setSuccessFor = (input) => {
+        const setSuccessFor = (input) => {
         const formControl = input.closest('div');
         formControl.classList.remove('error');
         const errorText = formControl.querySelector('.error-text');
         errorText.innerText = '';
     };
 
-    /*
-    const isEmail = (email) => {
+        const isEmail = (email) => {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
     };
@@ -108,10 +102,6 @@ document.addEventListener('form', () => {
             }
         });
     });
-
-
-/*
-
      // Agrega eventos para borrar las clases de error cuando se selecciona una opción del select
         form.querySelectorAll('select').forEach(select => {
         select.addEventListener('change', () => {
@@ -125,8 +115,6 @@ document.addEventListener('form', () => {
     });
 });
 
-
-*/
 
 // Desde acá, lo que estaba intentando hacer de acuerdo a lo visto en la clase. En el HTML se borró el required ID para probar
 
@@ -194,7 +182,7 @@ document.getElementById("registrarse").addEventListener("submit",function(event)
                 }
 
             /* Esta validación es para que solo se pueda enviar el formulario si se escribe la contraseña Entrada$2024*/
-  /*          
+/*          
             if(password.trim()!=="Entrada$2024")
                 {
                     passwordError.textContent="Su contraseña no es válida. Reintente"
