@@ -15,17 +15,17 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
-  
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: rgb(23, 23, 23);
 }
-   
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #9f3647;
 }
-  
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background:#9f3647;
@@ -33,8 +33,8 @@
 body{
     background-color: #181419;
     color:white; 
-     /* scrollbar-color: #9f3647  #181419; /*nuevo
-     scrollbar-width: thin;*/
+    /* scrollbar-color: #9f3647  #181419; /*nuevo
+    scrollbar-width: thin;*/
 }
 
 /*ESTILOS HEADER PARA ESCRITORIO*/
@@ -828,4 +828,9 @@ hr{
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
+}
+
+.error{
+    color: red;
+    font-size: medium;
 }

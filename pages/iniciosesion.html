@@ -29,19 +29,22 @@
         <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse"> 
         <h2 class="tituloRegistrarse"> Iniciar Sesión</h2>
         
-            <form method="post" action="#">
-
+        <form id="inicioSesion" method="get" action="#">
 
             <div>
-                <input type="email" placeholder="E-mail" required id="mail" name="mail">
+                <input type="email" placeholder="E-mail"  id="email" name="email">
+                <span id="emailError" class="error"></span>
             </div>
 
             <div>
-                <input type="password" placeholder="Contraseña" required id="password" name="password">
+                <input type="password" placeholder="Contraseña"  id="password" name="password">
+                <span id="passwordError" class="error"></span>
             </div>
 
             <div>
-                <input type="submit" class="boton" value="Iniciar Sesión">
+            
+                <input class="boton" type="submit" value="Iniciar Sesión">
+
             </div>
 
             <div>
@@ -49,6 +52,7 @@
             </div>
 
             </form>
+
 
         </section>
 
@@ -58,5 +62,6 @@
     <script>
     AOS.init();
     </script> 
+    <script src="../js/validar_iniciosesion.js"></script>
 </body>
 </html>
